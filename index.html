@@ -47,7 +47,7 @@ var currentdate = new Date().toLocaleDateString();
         }
     };
  $('#download').click(function () {
-   alert("clicked");
+   //alert("clicked");
         var doc = new jsPDF();
         doc.fromHTML($('#resume_body').html(), 15, 15, {
             'width': 170,'elementHandlers': specialElementHandlers
