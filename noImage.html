@@ -1,0 +1,342 @@
+Skip to content
+The vote is over, but the fight for net neutrality isn’t. Show your support for a free and open internet.
+Learn more  Dismiss
+This repository
+Search
+Pull requests
+Issues
+Marketplace
+Explore
+ @tmvinoth3
+ Sign out
+ Watch 0
+  Star 0
+  Fork 0 tmvinoth3/CV
+ Code  Issues 0  Pull requests 0  Projects 0  Wiki  Insights  Settings
+Branch: master Find file Copy pathCV/index.html
+3337028  14 minutes ago
+@tmvinoth3 tmvinoth3 Updated Designation added skills
+1 contributor
+RawBlameHistory     
+314 lines (294 sloc)  12.1 KB
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Resume</title>
+<link type="text/css" rel="stylesheet" href="css/blue.css" />
+<link type="text/css" rel="stylesheet" href="css/print.css" media="print"/>
+<!--[if IE 7]>
+<link href="css/ie7.css" rel="stylesheet" type="text/css" />
+<![endif]-->
+<!--[if IE 6]>
+<link href="css/ie6.css" rel="stylesheet" type="text/css" />
+<![endif]-->
+<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="js/jquery.tipsy.js"></script>
+<script type="text/javascript" src="js/cufon.yui.js"></script>
+<script type="text/javascript" src="js/scrollTo.js"></script>
+<script type="text/javascript" src="js/myriad.js"></script>
+<script type="text/javascript" src="js/jquery.colorbox.js"></script>
+<script type="text/javascript" src="js/custom.js"></script>
+
+<!-- Export PDF scripts-->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.1.135/jspdf.min.js"></script>
+<script type="text/javascript" src="http://cdn.uriit.ru/jsPDF/libs/adler32cs.js/adler32cs.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2014-11-29/FileSaver.min.js
+"></script>
+<script type="text/javascript" src="libs/Blob.js/BlobBuilder.js"></script>
+<script type="text/javascript" src="http://cdn.immex1.com/js/jspdf/plugins/jspdf.plugin.addimage.js"></script>
+<script type="text/javascript" src="http://cdn.immex1.com/js/jspdf/plugins/jspdf.plugin.standard_fonts_metrics.js"></script>
+<script type="text/javascript" src="http://cdn.immex1.com/js/jspdf/plugins/jspdf.plugin.split_text_to_size.js"></script>
+<script type="text/javascript" src="http://cdn.immex1.com/js/jspdf/plugins/jspdf.plugin.from_html.js"></script>
+<!-- End Export PDF scripts-->
+
+<script type="text/javascript">
+		Cufon.replace('h1,h2');
+</script>
+<!-- Export PDF -->
+<script type="text/javascript">
+$(function () {
+var currentdate = new Date().toLocaleDateString();
+    var specialElementHandlers = {
+        '#editor': function (element,renderer) {
+            return true;
+        }
+    };
+ $('#download').click(function () {
+   //alert("clicked");
+        var doc = new jsPDF();
+        doc.fromHTML($('#resume_body').html(), 15, 15, {
+            'width': 170,'elementHandlers': specialElementHandlers
+        });
+        doc.save('Resume-'+currentdate+'.pdf');
+    });  
+});
+</script>
+<!-- End Export PDF -->
+
+</head>
+<body id="resume_body">
+<!-- Begin Wrapper -->
+<div id="wrapper">
+  <div class="wrapper-top"></div>
+  <div class="wrapper-mid">
+    <!-- Begin Paper -->
+    <div id="paper">
+      <div class="paper-top"></div>
+      <div id="paper-mid">
+        <div class="entry">
+          <!-- Begin Image -->
+          <img class="portrait" src="images/myimage.jpg" alt="Vinothkumar" />
+          <!-- End Image -->
+          <!-- Begin Personal Information -->
+          <div class="self">
+            <h1 class="name">Vinothkumar <br />
+              <span>Full Stack Developer</span></h1>
+            <ul>
+              <li class="ad">29, Big St, Anakaputhur, Chennai-70</li>
+              <li class="mail">tmvinoth3@gmail.com</li>
+              <li class="tel">+91 887-025-4842</li>
+              <li class="web">https://tmvinoth3.github.io</li>
+            </ul>
+          </div>
+          <!-- End Personal Information -->
+          <!-- Begin Social -->
+          <div class="social">
+            <ul>
+              <li><a class='north' title="Download .pdf"><img id="download"  src="images/icn-save.jpg" alt="Download the pdf version" /></a></li>
+              <li><a class='north' href="javascript:window.print()" title="Print"><img src="images/icn-print.jpg" alt="" /></a></li>
+              <li><a class='north' href="https://github.com/tmvinoth3" id="github" title="My Github Profile"><img src="images/github.png" alt="" /></a></li>
+              <li><a class='north' href="https://linkedin.com/in/tmvinoth3" id="Linkedin" title="My Linkedin Profile"><img src="images/linkedin.png" alt="" /></a></li>
+              
+              <!--<li><a class='north' id="contact" href="contact/index.html" title="Contact Me"><img src="images/icn-contact.jpg" alt="" /></a></li>
+              <li><a class='north' href="#" title="My Facebook Profile"><img src="images/icn-facebook.jpg" alt="" /></a></li> -->
+            </ul>
+          </div>
+          <!-- End Social -->
+        </div>
+        <!-- Begin 1st Row -->
+        <div class="entry">
+          <h2>Objective</h2>
+          <p>To work with challenging environment.</p>
+        </div>
+        <!-- End 1st Row -->
+        <!-- Begin 2nd Row -->
+        <div class="entry">
+          <h2>Education</h2>
+          <div class="content">
+            <h3>B.E(July 2012 - May 2016)</h3>
+            <p>S.S.N College of Engineering, Anna University <br />
+              <em>Computer Science And Engineering</em></p>
+          </div>
+          <div class="content">
+            <h3>H.S.C(2012)</h3>
+            <p>M.K.V GOVT HR SEC SCHOOL, Arani, TamilNadu <br />
+              <em>Computer Science</em></p>
+          </div>
+                    <div class="content">
+            <h3>SSLC(2010)</h3>
+            <p>M.K.V GOVT HR SEC SCHOOL, Arani, TamilNadu <br />
+              <em>Computer Science</em></p>
+          </div>
+        </div>
+        <!-- End 2nd Row -->
+                <!-- Begin 3rd Row -->
+        <div class="entry">
+          <h2>Academic Projects</h2>
+            <div class="content">
+            <h3>2016</h3>
+            <p>Online Petitioning System for maintenance of roads using CrowdSourcing technique. <br />
+              <em>Final Year Project</em></p>
+          </div>
+          <div class="content">
+          <h3>2015</h3>
+            <p>Student Database Management for managing the entire academic history of a student. <br />
+            <em>Object Oriented Analysis and Design project</em></p>
+          </div>
+          <div class="content">
+            <h3>2013</h3>
+            <p>Hotel Management System to book rooms. <br />
+            <em>Database Management System</em></p>
+          </div>
+
+        </div>
+        <!-- End 3rd Row -->
+
+                <!-- Begin 4th Row -->
+        <div class="entry">
+          <h2>Web Projects</h2>
+
+            <div class="content">
+            <h3>2017</h3>
+            <p>Sample MVC Web API project to manage videos information with Entity Framework. <br />
+              <em>MVC</em></p>
+          </div>
+          <div class="content">
+          <h3>2017</h3>
+            <p>Simple Web Application to create and consume WCF service. <br />
+            <em>WCF</em></p>
+          </div>
+          <div class="content">
+            <h3>2017</h3>
+            <p>Silverlight application implementing undo operation using stack. <br />
+            <em>Silverlight</em></p>
+          </div>
+          <div class="content">
+            <h3>2017</h3>
+            <p>Fibonacci Clock using silverlight. <br />
+            <em>Silverlight</em></p>
+          </div>
+          <div class="content">
+            <h3>2017</h3>
+            <p>Simple webpage for Freedom fighters of India using Bootstrap.<br />
+            <em>Html & Bootstrap</em></p>
+          </div>		
+        </div>
+        <!-- End 4th Row -->
+
+                        <!-- Begin 5th Row -->
+        <div class="entry">
+          <h2>Academic Certifications</h2>
+          <div class="content"></div>
+          <div class="content">
+          <h3>2010</h3>
+            <p>Awarded by Lions club for secured school second in SSLC. <br /></p>
+          </div>
+          <div class="content">
+            <h3>2012</h3>
+            <p>Secured school first in higher secondary. <br /></p>
+          </div>
+	 <div class="content">
+            <h3>2012</h3>
+            <p>Awarded Full Scholarship (Rural Scholarship) from the SSN College of Engineering , during the Course period 2012 - 2016. <br /></p>
+          </div>
+        </div>
+        <!-- End 5th Row -->
+
+                                <!-- Begin 6th Row -->
+        <div class="entry">
+          <h2>Cognizant Certifications</h2>
+          <div class="content"></div>
+                    <div class="content">
+            <h3>2017</h3>
+            <p>Cognizant Certified Jr.Developer/App Analyst - ASP.NET MVC and Entity Framework with SQL Server. <br /></p>
+          </div>
+          <div class="content">
+          <h3>2016</h3>
+            <p>Completed Campus Associate Training Program in Cognizant. <br /></p>
+          </div>
+        </div>
+        <!-- End 6th Row -->
+
+        <!-- Begin 7th Row -->
+        <div class="entry">
+          <h2>Experience</h2>
+          <div class="content">
+            <h3>June 2016 - Present</h3>
+            <p>Cognizant <br />
+              <em>Programmer Analyst</em></p>
+
+          </div>
+
+        </div>
+        <!-- End 7th Row -->
+        <!-- Begin 8th Row -->
+        <div class="entry">
+          <h2>Skills</h2>
+          <div class="content">
+            <h3>Software Knowledge</h3>
+            <ul class="skills">
+              <li>Visual Studio 2010 & 2017</li>
+              <li>SoapUI</li>
+              <li>Sql Server Data Tools</li>
+              <li>Sql Server Management Studio</li>
+	      <li>Sql Server Integration Services</li>
+            </ul>
+          </div>
+          <div class="content">
+            <h3>Languages</h3>
+            <ul class="skills">
+              <li>C</li>
+              <li>C#</li>
+              <li>Java</li>
+              <li>SQL</li>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>Jquery</li>
+              <li>Bootstrap</li>
+              <li>ASP.NET MVC</li>
+              <li>WCF</li>
+	      <li>AngularJs(Beginner)</li>
+            </ul>
+          </div>
+                    <div class="content">
+            <h3>Platforms</h3>
+            <ul class="skills">
+              <li>Windows</li>
+              <li>Linux</li>
+            </ul>
+          </div>
+        </div>
+        <!-- End 8th Row -->
+
+                 <!-- Begin 9th Row -->
+        <div class="entry">
+        <h2>Strengths</h2>
+        	<ul class="works">
+        		<li>TeamWork</li>
+        	</ul>
+        </div>
+        <!-- End 9th Row -->
+
+                         <!-- Begin 10th Row -->
+        <div class="entry">
+        <h2>Hobbies</h2>
+        	<ul class="works">
+        		<li>Computer Gaming</li>
+            <li>Reading Quora</li>
+        	</ul>
+        </div>
+        <!-- End 10th Row -->
+
+         <!-- Begin 11th Row -->
+        <div class="entry">
+       <!-- <h2>WORKS</h2>
+        	<ul class="works">
+        		<li><a href="images/1.jpg" rel="gallery" title="Lorem ipsum dolor sit amet."><img src="images/image.jpg" alt="" /></a></li>
+        		<li><a href="images/2.jpg" rel="gallery" title="Lorem ipsum dolor sit amet."><img src="images/image.jpg" alt="" /></a></li>
+        		<li><a href="images/3.jpg" rel="gallery" title="Lorem ipsum dolor sit amet."><img src="images/image.jpg" alt="" /></a></li>
+        		<li><a href="images/1.jpg" rel="gallery" title="Lorem ipsum dolor sit amet."><img src="images/image.jpg" alt="" /></a></li>
+        		<li><a href="images/2.jpg" rel="gallery" title="Lorem ipsum dolor sit amet."><img src="images/image.jpg" alt="" /></a></li>
+        		<li><a href="images/3.jpg" rel="gallery" title="Lorem ipsum dolor sit amet."><img src="images/image.jpg" alt="" /></a></li>
+        		<li><a href="images/1.jpg" rel="gallery" title="Lorem ipsum dolor sit amet."><img src="images/image.jpg" alt="" /></a></li>
+        		<li><a href="images/1.jpg" rel="gallery" title="Lorem ipsum dolor sit amet."><img src="images/image.jpg" alt="" /></a></li>
+        	</ul>
+        </div> 
+        <!-- End 11th Row -->
+      </div>
+      <div class="clear"></div>
+      <div class="paper-bottom"></div>
+    </div>
+    <!-- End Paper -->
+  </div>
+  <div class="wrapper-bottom"></div>
+</div>
+<div id="message"><a href="#top" id="top-link">Go to Top</a></div>
+<!-- End Wrapper -->
+</body>
+</html>
+© 2017 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Help
+Contact GitHub
+API
+Training
+Shop
+Blog
+About
